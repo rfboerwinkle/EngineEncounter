@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cixcqssijbovm"]
+
+[ext_resource type="Script" path="res://phyxel.gd" id="1_xlnu4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1aji"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(134, 77)
+script = ExtResource("1_xlnu4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_t1aji")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
